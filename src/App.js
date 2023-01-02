@@ -3,6 +3,7 @@ import './components/navbar.css';
 import './components/hero.css';
 import './components/shorten.css';
 import './components/grid.css';
+import './components/footer.css';
 import Illustration from './assets/images/illustration-working.svg'
 import shortly from './assets/images/logo.svg'
 import shortenBg from './assets/images/bg-shorten-desktop.svg'
@@ -15,6 +16,8 @@ function App() {
   const [list, setList] = useState({
     url: ""
   });
+
+  const [listItem, setListItem] = useState([]);
 
   const [error, setError] = useState(false);
 
@@ -29,6 +32,7 @@ function App() {
     if(!text || !text.match(urlRegex)){
       setError(true);
     } else {
+      setListItem([...listItem, list ])
       setError(false);
     }
   }
@@ -78,16 +82,21 @@ function App() {
             {error === true ? "Empty or a wrong URL type!" : ''}
           </p>
         </div>
-        <div className="shorten-links-container">
+        {listItem.map((item, index) => {
+            return (
+              <div className="shorten-links-container" key={index}>
               <div className="shorten-links-left">
                   <li>
-                  tere
+                    {item.url}
                   </li>
               </div>
               <div className="shorten-links-right">
                  <button id="copy">Copy</button>
               </div>
             </div>
+            )
+          })}
+                  
         <h3 id='advanced-title'>Advanced Statistics</h3>
         <p id='advanced-text'>
           Track how your links are performing across the web with
@@ -120,6 +129,21 @@ function App() {
                 audience engagement.
               </p>
             </div>  
+        </div>
+        <div className='banner-container' 
+        style={{
+          backgroundImage: `url(${shortenBg})`,
+          backgroundSize: 'cover'
+        }}>
+            <h3>Boost your links today</h3>
+            <button>Get started</button>
+        </div>
+        <div className='footer-container'>
+            <footer>
+                <p>Author: Hege Refsnes
+                <a href="mailto:hege@example.com">hege@example.com</a>
+                </p>
+          </footer>
         </div>
       </div>
     </div>

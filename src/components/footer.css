@@ -1,0 +1,26 @@
+.banner-container {
+    background-color: hsl(257, 27%, 26%);
+    padding: 50px;
+    text-align: center;
+}
+
+.banner-container h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.banner-container button{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0px solid white;
+    border-radius: 20px;
+}
+
+.banner-container button:hover{
+    background-color: hsl(180, 61%, 68%);
+}
