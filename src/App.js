@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import './components/navbar.css';
 import './components/hero.css';
 import './components/shorten.css';
@@ -6,6 +7,28 @@ import shortly from './assets/images/logo.svg'
 import shortenBg from './assets/images/bg-shorten-desktop.svg'
 
 function App() {
+
+  const [list, setList] = useState({
+    url: ""
+  });
+
+  const [error, setError] = useState(false);
+
+  const handleChange = (e) => {
+    setList({...list, [e.target.name] : [e.target.value]})
+  }
+
+  const validation = () => {
+    const urlRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/;
+    let text = list.url.toString();
+   
+    if(!text || !text.match(urlRegex)){
+      setError(true);
+    } else {
+      setError(false);
+    }
+  }
+
   return (
     <div className="App">
       <div class="topnav">
@@ -36,23 +59,21 @@ function App() {
          style={{
             backgroundImage: `url(${shortenBg})`
           }}>
-          <input 
+          <input style={{
+            border: error === true ? '2px solid hsl(0, 87%, 67%)' : ''
+          }}
           id="shorten-input"
           type="text"
+          name="url"
+          onChange={handleChange}
           placeholder="Shorten a link here..."
           />
-          <button id="shorten-button">Shorten it!</button>
+          <button onClick={validation} id="shorten-button">Shorten it!</button>
+          <p id='error'>
+            {error === true ? "Empty or a wrong URL type!" : ''}
+          </p>
         </div>
-        <div className="shorten-links-container">
-          <div className="shorten-links-left">
-            <li>
-            https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G
-            </li>
-          </div>
-          <div className="shorten-links-right">
-            <button id="copy">Copy</button>
-          </div>
-        </div>
+        
         <h3>Advanced Statistics</h3>
         <p>
           Track how your links are performing across the web with
