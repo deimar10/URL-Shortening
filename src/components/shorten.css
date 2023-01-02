@@ -1,0 +1,85 @@
+.App {
+    height: 100vh;
+}
+
+.main-section {
+    margin-top: 660px;
+    padding-top: 100px;
+    background-color:  hsl(233, 44%, 96%);
+}
+
+.shorten-container {
+    position: absolute;
+    top: 690px;
+    left: 10%;
+    width: 73%;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: hsl(257, 27%, 26%);
+}
+
+#shorten-input {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 80%;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+#shorten-button {
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0px solid white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#shorten-button:hover {
+    background-color: hsl(180, 61%, 68%);
+}
+
+.shorten-links-container {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 75%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.shorten-links-left {
+    margin-top: -10px;
+    float: left;
+    width: 70%;
+    height: 100px;
+}
+
+.shorten-links-right {
+    margin-top: -18px;
+    float: right;
+    width: 30%;
+    height: 100px;
+}
+
+.shorten-links-container li {
+    list-style: none;
+    width: 80%;
+}
+
+#copy {
+    float: right;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0px solid white;
+    border-radius: 5px;
+}

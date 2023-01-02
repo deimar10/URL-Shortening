@@ -1,0 +1,45 @@
+.hero-section {
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 88%;
+  }
+  
+  .column-left {
+    padding-left: 100px;
+    width: 30%;
+    float: left;
+  }
+  
+  .column-left h2{
+    color: hsl(255, 11%, 22%);
+    font-size: 70px;
+  }
+  
+  .column-left p{
+    margin-top: -50px;
+    padding-bottom: 20px;
+    color: hsl(257, 7%, 63%);
+    font-size: 20px;
+  }
+  
+  .column-left button{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0px solid white;
+    border-radius: 20px;
+  }
+  
+  .column-left button:hover {
+    background-color: hsl(180, 61%, 68%);
+  }
+  
+  .column-rigth {
+    width: 44%;
+    float: right;
+  }

@@ -1,0 +1,59 @@
+.topnav {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .topnav-links {
+    padding-top: 40px;
+    float: left;
+    height: 50px;
+    padding-left: 120px;
+    width: 50%;
+  }
+  
+  .topnav a {
+    margin-left: 20px;
+    padding: 16px;
+    color: hsl(257, 7%, 63%);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    font-weight: 600;
+    color:hsl(255, 11%, 22%);
+  }
+  
+  .topnav-buttons {
+    padding-top: 40px;
+    padding-left: 10px;
+    width: 20%;
+    height: 50px;
+    float: right;
+  }
+  
+  .topnav-buttons button{
+    background-color: transparent;
+    border: 0px solid white;
+    color: hsl(257, 7%, 63%);
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  
+  #signUp {
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 0px solid white;
+    border-radius: 20px;
+  }
+  
+  #signUp:hover {
+    background-color: hsl(180, 61%, 68%);
+  }
