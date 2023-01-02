@@ -2,9 +2,13 @@ import {useState} from 'react';
 import './components/navbar.css';
 import './components/hero.css';
 import './components/shorten.css';
+import './components/grid.css';
 import Illustration from './assets/images/illustration-working.svg'
 import shortly from './assets/images/logo.svg'
 import shortenBg from './assets/images/bg-shorten-desktop.svg'
+import brandIcon from './assets/images/icon-brand-recognition.svg'
+import customizeIcon from './assets/images/icon-fully-customizable.svg'
+import detailedIcon from './assets/images/icon-detailed-records.svg'
 
 function App() {
 
@@ -57,7 +61,8 @@ function App() {
       <div className="main-section">
         <div className="shorten-container"
          style={{
-            backgroundImage: `url(${shortenBg})`
+            backgroundImage: `url(${shortenBg})`,
+            backgroundSize: 'cover'
           }}>
           <input style={{
             border: error === true ? '2px solid hsl(0, 87%, 67%)' : ''
@@ -73,12 +78,49 @@ function App() {
             {error === true ? "Empty or a wrong URL type!" : ''}
           </p>
         </div>
-        
-        <h3>Advanced Statistics</h3>
-        <p>
+        <div className="shorten-links-container">
+              <div className="shorten-links-left">
+                  <li>
+                  tere
+                  </li>
+              </div>
+              <div className="shorten-links-right">
+                 <button id="copy">Copy</button>
+              </div>
+            </div>
+        <h3 id='advanced-title'>Advanced Statistics</h3>
+        <p id='advanced-text'>
           Track how your links are performing across the web with
            our advanced statistics dashboard
         </p>
+        <div className="grid-container"> 
+            <div class="grid-item">
+              <img id='grid-icon' src={brandIcon} />
+              <h4>Brand recognition</h4>
+              <p>Boost your brand recognition with
+                each click. Generic links dont mean a
+                thing. Branded links help instil
+                confidence in your content.
+              </p>
+            </div>
+            <div class="second-grid-item">
+              <img id='second-grid-icon' src={detailedIcon} />
+              <h4>Detailed Records</h4>
+              <p>Gain insights into who is clicking your
+                links.Knowing when and where
+                people engage with your contenthelps inform better decisions. 
+              </p>
+            </div>
+            <div class="third-grid-item">
+              <img id='third-grid-icon' src={customizeIcon} />
+              <h4>Fully Customizable</h4>
+              <p>Improve brand awarness and
+                content discoverabiltiy trough
+                cuztomisable links. Supercharging
+                audience engagement.
+              </p>
+            </div>  
+        </div>
       </div>
     </div>
   );

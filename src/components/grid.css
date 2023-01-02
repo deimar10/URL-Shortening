@@ -1,0 +1,100 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 30px;
+    width: 85%;
+    height: 225px;
+}
+
+.second-grid-item {
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 30px;
+    width: 85%;
+    height: 225px;
+}
+
+.third-grid-item {
+    margin-top: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 30px;
+    width: 85%;
+    height: 225px;
+}
+
+.grid-item, .second-grid-item, .third-grid-item h4 {
+    color: hsl(260, 8%, 14%);
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.grid-item p {
+    color: hsl(257, 7%, 63%);
+    font-size: 20px;
+}
+
+.second-grid-item p {
+    color: hsl(257, 7%, 63%);
+    font-size: 20px;
+}
+
+.third-grid-item p {
+    color: hsl(257, 7%, 63%);
+    font-size: 20px;
+}
+
+#advanced-title {
+    padding-top: 100px;
+    text-align: center;
+    color: hsl(260, 8%, 14%);
+    font-size: 40px;
+}
+
+#advanced-text {
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 27%;
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    font-size: 22px;
+    padding-bottom: 120px;
+}
+
+#grid-icon {
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 1280px;
+}
+
+#second-grid-icon {
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 1340px;
+}
+
+#third-grid-icon {
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 1400px;
+}
