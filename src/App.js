@@ -10,6 +10,11 @@ import shortenBg from './assets/images/bg-shorten-desktop.svg'
 import brandIcon from './assets/images/icon-brand-recognition.svg'
 import customizeIcon from './assets/images/icon-fully-customizable.svg'
 import detailedIcon from './assets/images/icon-detailed-records.svg'
+import twitter from './assets/images/icon-twitter.svg'
+import instagram from './assets/images/icon-instagram.svg'
+import facebook from './assets/images/icon-facebook.svg'
+import pinterest from './assets/images/icon-pinterest.svg'
+
 
 function App() {
 
@@ -149,7 +154,42 @@ function App() {
             <h3>Boost your links today</h3>
             <button>Get started</button>
         </div>
-      
+        <div className='footer-container'>
+            <footer>
+                <div className="footer-grid-container"> 
+                <div class="footer-grid-item">
+                  <h3>Shortly</h3>
+                </div>
+                <div class="footer-second-grid-item">
+                      <div class="footer-grid-list">
+                          <h5>Features</h5>
+                          <li>Link shortening</li>
+                          <li>Branded links</li>
+                          <li>Analytics</li>
+                      </div>
+                      <div class="footer-grid-list">
+                            <h5>Resources</h5>
+                            <li>Blog</li>
+                            <li>Developers</li>
+                            <li>Support</li>
+                        </div>
+                        <div class="footer-grid-list">
+                            <h5>Company</h5>
+                            <li>About</li>
+                            <li>Our Team</li>
+                            <li>Careers</li>
+                            <li>Contact</li>
+                        </div>
+                </div>
+                <div class="footer-social-grid-item">
+                  <img id='social-icons' src={facebook} />
+                  <img id='social-icons' src={twitter} />
+                  <img id='social-icons' src={instagram} />
+                  <img id='social-icons' src={pinterest} />
+                </div>
+                </div>
+          </footer>
+        </div>
       </div>
     </div>
   );
