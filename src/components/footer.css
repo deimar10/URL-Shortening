@@ -30,6 +30,7 @@
 /*Footer*/
 
 .footer-container {
+    padding-top: 20px;
     background-color: hsl(255, 11%, 22%);
 }
 

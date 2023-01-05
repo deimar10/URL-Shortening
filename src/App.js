@@ -43,12 +43,16 @@ function App() {
     }
   }
 
-  const handleCopy = () => {
-    let copyText = list.url.toString();
+  const handleCopy = (url, index) => {
+    listItem.map((item) => {
+      if (item.url === url) {
+        navigator.clipboard.writeText(item.url);
 
-    navigator.clipboard.writeText(copyText)
-    
-    alert("copied the text: " + copyText);
+        let listItems = [...listItem];
+        listItems[index].copied = true;
+
+        setListItem(listItems);
+      }}) 
   }
 
   return (
@@ -98,16 +102,19 @@ function App() {
         </div>
         {listItem.map((item, index) => {
             return (
-              <div className="shorten-links-container" key={index}>
+              <div className="shorten-links-container" key={item.url}>
               <div className="shorten-links-left">
                   <li>
                     {item.url}
                   </li>
               </div>
               <div className="shorten-links-right">
-                 <button onClick={handleCopy}
-                  id="copy">
-                    Copy
+                 <button onClick={e => handleCopy(item.url, index)}
+                  id="copy"
+                  style={{
+                    backgroundColor: item.copied ? 'hsl(257, 27%, 26%)': ''
+                  }}>
+                    { item.copied ? 'Copied!' : 'Copy'}
                   </button>
               </div>
             </div>
