@@ -4,7 +4,7 @@ import './components/hero.css';
 import './components/shorten.css';
 import './components/grid.css';
 import './components/footer.css';
-import Illustration from './assets/images/illustration-working.svg'
+import illustration from './assets/images/illustration-working.svg'
 import shortly from './assets/images/logo.svg'
 import shortenBg from './assets/images/bg-shorten-desktop.svg'
 import brandIcon from './assets/images/icon-brand-recognition.svg'
@@ -14,7 +14,8 @@ import detailedIcon from './assets/images/icon-detailed-records.svg'
 function App() {
 
   const [list, setList] = useState({
-    url: ""
+    url: "",
+    copied: false
   });
 
   const [listItem, setListItem] = useState([]);
@@ -35,6 +36,14 @@ function App() {
       setListItem([...listItem, list ])
       setError(false);
     }
+  }
+
+  const handleCopy = () => {
+    let copyText = list.url.toString();
+
+    navigator.clipboard.writeText(copyText)
+    
+    alert("copied the text: " + copyText);
   }
 
   return (
@@ -59,7 +68,7 @@ function App() {
           <button>Get started</button>
         </div>
         <div class="column-rigth">
-        <img src={Illustration} />
+        <img src={illustration} />
         </div>
       </div>
       <div className="main-section">
@@ -91,12 +100,14 @@ function App() {
                   </li>
               </div>
               <div className="shorten-links-right">
-                 <button id="copy">Copy</button>
+                 <button onClick={handleCopy}
+                  id="copy">
+                    Copy
+                  </button>
               </div>
             </div>
             )
-          })}
-                  
+          })}         
         <h3 id='advanced-title'>Advanced Statistics</h3>
         <p id='advanced-text'>
           Track how your links are performing across the web with
@@ -138,13 +149,7 @@ function App() {
             <h3>Boost your links today</h3>
             <button>Get started</button>
         </div>
-        <div className='footer-container'>
-            <footer>
-                <p>Author: Hege Refsnes
-                <a href="mailto:hege@example.com">hege@example.com</a>
-                </p>
-          </footer>
-        </div>
+      
       </div>
     </div>
   );

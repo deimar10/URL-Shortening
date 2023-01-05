@@ -6,11 +6,14 @@
     margin-top: 660px;
     padding-top: 100px;
     background-color:  hsl(233, 44%, 96%);
+    position: relative;
+    height: 1500px;
 }
 
 .shorten-container {
     position: absolute;
-    top: 690px;
+    top: -80px;
+    bottom: 0;
     left: 10%;
     height: 55px;
     width: 73%;
@@ -57,14 +60,12 @@
     margin-top: -10px;
     float: left;
     width: 70%;
-    height: 100px;
 }
 
 .shorten-links-right {
     margin-top: -18px;
     float: right;
     width: 30%;
-    height: 100px;
 }
 
 .shorten-links-container li {
@@ -83,6 +84,10 @@
     padding-right: 25px;
     border: 0px solid white;
     border-radius: 5px;
+}
+
+#copy:hover {
+    background-color: hsl(180, 61%, 68%);
 }
 
 #error {
