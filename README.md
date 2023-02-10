@@ -1,70 +1,23 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Table of Contents
+* <strong>Overview</strong>
+    * <strong>Stack</strong>
+    * <strong>App. Functionalities
+    * <strong>Screenshots</strong>
+## Stack
+<div id="badges" style="display: flex; justify-content: start;">
+        <img src="https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=blue" alt="React Badge"/>
+        <img style="margin-left: 0.5rem;" src="https://img.shields.io/badge/JavaScript-white?style=for-the-badge&logo=javascript&logoColor=##ECD53F" alt="JS Badge"/>
+    </div>
+    
+## App. Functionalities
+* User
+  * Shorten any valid URL
+  * Copy the shortened link to their clipboard in a single click
+  * Receive an error message when the form is submitted if the input field is empty
+## Screenshots
+![qwe](https://user-images.githubusercontent.com/89903372/218209826-df849dec-a936-4b28-84c5-d852fb558678.PNG)
+![xx](https://user-images.githubusercontent.com/89903372/218209831-40bac051-4b7d-4e93-885f-f9c01b4eebb0.PNG)
+![ada](https://user-images.githubusercontent.com/89903372/218209833-bb1a44a6-5845-46f9-9c0e-d0399c3d17b1.PNG)
+![asd](https://user-images.githubusercontent.com/89903372/218209835-42d2b78d-9607-49ae-85ce-3231d99f7ba5.PNG)
+![asdaz](https://user-images.githubusercontent.com/89903372/218209838-69b8ac08-69f9-489e-af95-bc28766d8d31.PNG)
+![Capture](https://user-images.githubusercontent.com/89903372/218209840-c5a9e445-664e-4f1d-87eb-c8fe5e61cb02.PNG)
